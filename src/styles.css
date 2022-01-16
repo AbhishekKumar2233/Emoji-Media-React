@@ -1,0 +1,21 @@
+.App {
+  font-family: "Alegreya SC";
+  text-align: center;
+}
+.container {
+  display: grid;
+  background-color: greenyellow;
+}
+.card {
+  background-color: rgb(217, 228, 187);
+  padding: 2px 0px;
+  margin: 15px 15px 35px 15px;
+  box-shadow: 8px 8px 13px rgb(64, 155, 4);
+}
+.card p {
+  margin-top: 5px;
+  font-size: 40px;
+}
+.card h4 {
+  padding: 0px 10px;
+}
