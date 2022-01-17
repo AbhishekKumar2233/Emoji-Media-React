@@ -8,24 +8,36 @@ import Card from "./Components/Card";
 //   />;
 // }
 
-function create(emojis) {
-  return (
-    <div className="container">
-      <Card
-        key={emojis.id}
-        name={emojis.name}
-        emoji={emojis.emoji}
-        meaning={emojis.meaning}
-      />
-    </div>
-  );
-}
+// function create(emojis) {
+//   return (
+//     <div className="container">
+//       <Card
+//         key={emojis.id}
+//         name={emojis.name}
+//         emoji={emojis.emoji}
+//         meaning={emojis.meaning}
+//       />
+//     </div>
+//   );
+// }
 
 export default function App() {
   return (
     <div className="App">
       <h1>Emoji Media</h1>
-      {data.map(create)}
+    
+      {/* arrow function */}
+      {data.map((emojis) => (
+        <div className="container">
+          <Card
+            key={emojis.id}
+            name={emojis.name}
+            emoji={emojis.emoji}
+            meaning={emojis.meaning}
+          />
+        </div>
+      ))};
+
     </div>
   );
 }
